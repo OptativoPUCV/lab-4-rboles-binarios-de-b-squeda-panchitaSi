@@ -78,7 +78,7 @@ Recuerde hacer que el current apunte al nodo encontrado.*/
 Pair * searchTreeMap(TreeMap * tree, void* key) {
     if (tree == NULL)return NULL;
     tree->current = tree->root;
-    while(tree->current->pair->key != NULL){
+    while(tree->current != NULL){
         if (is_equal(tree,tree->current->pair->key,key))return tree->current->pair;
         if (tree->lower_than(tree->current->pair->key,key)) tree->current = tree->current->right;
         else tree->current = tree->current->left;
