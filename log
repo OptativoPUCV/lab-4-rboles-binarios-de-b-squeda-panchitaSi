@@ -78,3 +78,17 @@ Fri, May  2, 2025 11:28:50 PM:
  tests:  15|4
 total_score: 25/70
 86cdbbe
+Sat, May  3, 2025  1:20:52 AM: 
+ treemap.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:105:28: warning: implicit declaration of function 'minimun' [-Wimplicit-function-declaration]
+         TreeNode* minimo = minimun(node->right);
+                            ^~~~~~~
+treemap.c:105:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+C:\Users\franc\AppData\Local\Temp\ccIl9TWS.o: In function `removeNode':
+C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:105: undefined reference to `minimun'
+collect2.exe: error: ld returned 1 exit status
+e436d98
