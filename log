@@ -32,3 +32,14 @@ C:\Users\franc\AppData\Local\Temp\ccEtgRQ6.o: In function `searchTreeMap':
 C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:83: undefined reference to `lower_than'
 collect2.exe: error: ld returned 1 exit status
 69b09ba
+Fri, May  2, 2025 10:00:23 PM: 
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'searchTreeMap':
+treemap.c:83:13: warning: implicit declaration of function 'lower_than' [-Wimplicit-function-declaration]
+         if (lower_than(tree,tree->current->pair->key,key)) tree->current = tree->current->right;
+             ^~~~~~~~~~
+C:\Users\franc\AppData\Local\Temp\ccqWSy9P.o: In function `searchTreeMap':
+C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:83: undefined reference to `lower_than'
+collect2.exe: error: ld returned 1 exit status
+76be4c6
