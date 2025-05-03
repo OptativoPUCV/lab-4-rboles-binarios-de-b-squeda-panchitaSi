@@ -92,3 +92,15 @@ C:\Users\franc\AppData\Local\Temp\ccIl9TWS.o: In function `removeNode':
 C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:105: undefined reference to `minimun'
 collect2.exe: error: ld returned 1 exit status
 e436d98
+Sat, May  3, 2025  1:22:16 AM: 
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:105:28: warning: implicit declaration of function 'minimun' [-Wimplicit-function-declaration]
+         TreeNode* minimo = minimun(node->right);
+                            ^~~~~~~
+treemap.c:105:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+C:\Users\franc\AppData\Local\Temp\ccwGnOmr.o: In function `removeNode':
+C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:105: undefined reference to `minimun'
+collect2.exe: error: ld returned 1 exit status
+3a72437
