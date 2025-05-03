@@ -104,3 +104,8 @@ C:\Users\franc\AppData\Local\Temp\ccwGnOmr.o: In function `removeNode':
 C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:105: undefined reference to `minimun'
 collect2.exe: error: ld returned 1 exit status
 3a72437
+Sat, May  3, 2025  1:22:34 AM: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+76ef535
