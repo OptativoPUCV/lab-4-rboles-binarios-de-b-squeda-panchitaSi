@@ -43,3 +43,8 @@ C:\Users\franc\AppData\Local\Temp\ccqWSy9P.o: In function `searchTreeMap':
 C:\Users\franc\OneDrive\Escritorio\Universidad\progra\Lab4\lab-4-rboles-binarios-de-b-squeda-panchitaSi/treemap.c:83: undefined reference to `lower_than'
 collect2.exe: error: ld returned 1 exit status
 76be4c6
+Fri, May  2, 2025 10:13:29 PM: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+4d0cc0e
