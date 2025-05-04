@@ -161,6 +161,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             padre = padre->parent;
         }
         tree->current = padre;
+        if (tree->current == NULL) return NULL;
     }
     return tree->current->pair;
 }
