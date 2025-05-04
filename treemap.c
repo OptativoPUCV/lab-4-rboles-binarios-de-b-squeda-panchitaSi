@@ -152,6 +152,32 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+        if (tree == NULL || tree->current == NULL)
+            return NULL;  // esto sí puede fallar al inicio, pero luego no
+    
+        TreeNode* node = tree->current;
+    
+        // Caso 1: tiene hijo derecho → mínimo del subárbol derecho
+        if (node->right != NULL) {
+            tree->current = minimum(node->right);
+        } else {
+            // Caso 2: buscar ancestro válido (el siguiente mayor)
+            TreeNode* parent = node->parent;
+            while (parent != NULL && parent->right == node) {
+                node = parent;
+                parent = parent->parent;
+            }
+    
+            // Si no se encuentra un next válido, no se cambia el current
+            if (parent != NULL)
+                tree->current = parent;
+    
+
+        // Si no hay next, se retorna el mismo pair (current no cambia)
+    return tree->current->pair;
+    }
+    
+    /*
     if (tree->current->right != NULL){
         tree->current = minimum(tree->current->right);
     }
@@ -164,5 +190,5 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         if (padre != NULL) tree->current = padre;
     }
-    return tree->current->pair;
+    return tree->current->pair;*/
 }
