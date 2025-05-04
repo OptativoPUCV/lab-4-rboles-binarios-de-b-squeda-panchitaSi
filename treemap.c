@@ -157,10 +157,12 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else{
         TreeNode* padre = tree->current->parent;
-        while(padre != NULL && padre->right != tree->current){
+        TreeNode* aux = tree->current;
+        while(padre != NULL && padre->right == aux){
+            aux = padre;
             padre = padre->parent;
         }
-        tree->current = padre;
+        if (padre != NULL) tree->current = padre;
     }
     return tree->current->pair;
 }
