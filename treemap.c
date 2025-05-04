@@ -155,5 +155,12 @@ Pair * nextTreeMap(TreeMap * tree) {
     if (tree->current->right != NULL){
         tree->current = minimum(tree->current->right);
     }
+    else{
+        TreeNode* padre = tree->current->parent;
+        while(padre != NULL && padre->right != tree->current){
+            padre = padre->parent;
+        }
+        tree->current = padre;
+    }
     return tree->current->pair;
 }
