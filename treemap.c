@@ -155,6 +155,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
             if (tree->current != NULL) aux = tree->current;
         } 
     }
+    tree->current = aux;
+    if (tree->lower_than(aux->pair->key,key))return nextTreeMap(tree);
     return aux->pair;
 }
 
